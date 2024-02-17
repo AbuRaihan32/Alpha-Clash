@@ -12,11 +12,54 @@
     <!-- Tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <h1 class="">Hello World Im Coming Soon</h1>
+<body class="fontPopinse">
+    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- Home Section -->
+        <section class="home text-white flex items-center justify-center h-svh hidden">
+            <div class="flex flex-col items-center gap-5">
+                <h1 class="text-9xl fontAnton">ALPHABET CLASH</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn">Play Now</button>
+            </div>
+        </section>
+    
+        <!-- play ground section -->
+        <section class="plyGround">
+            <div>
+                <!-- screen -->
+                <div>
 
+                </div>
+                <!-- keyboard -->
+                <div>
+
+                </div>
+                <!-- life & score -->
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section class="score">
+    
+        </section>
+    </main>
 
     <!-- js file connect -->
     <script src="js/alpha.js"></script>
